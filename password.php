@@ -16,7 +16,7 @@ function genpwd($c, $letters, $caps, $numbers) {
 	// Generate the character list to choose from - based on type
 	$chars = getchars(password, $letters, $caps, $numbers);
 	// Special $counter to ensure at least 1 of each type of selected symbol is used
-	$ensure = $letters . $caps . $numbers;
+	$ensure = $letters + $caps + $numbers;
 
 	// Generate each character 1 at a time
 	for ($i=0; $i<$c; $i++) {
