@@ -1,13 +1,13 @@
 <?
 /************************************************/
-/*	Generate password function					*/
-/*	 - plus other useful string functions		*/
-/*												*/
-/*	Created by: Shaun Cockerill (iiNet)			*/
-/*	Date: 26/09/2011							*/
-/*												*/
-/*	Adjusted for PHP: 16/08/2013 (MediaCloud)	*/
-/*												*/
+/*  Generate password function                  */
+/*    - plus other useful string functions      */
+/*                                              */
+/*  Created by: Shaun Cockerill (iiNet)         */
+/*  Date: 26/09/2011                            */
+/*                                              */
+/*  Adjusted for PHP: 16/08/2013 (MediaCloud)   */
+/*                                              */
 /************************************************/
 
 // Generate a password
