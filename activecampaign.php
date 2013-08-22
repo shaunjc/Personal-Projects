@@ -2,8 +2,6 @@
 
 /****************************************************/
 /*  Active Campaign Provisioning Module for WHMCS   */
-/*  - Branded Futuremail                            */
-/*  (Same Concept for any Active Campaign account)  */
 /*                                                  */
 /*  Created by: Shaun Cockerill (MediaCloud)        */
 /*  Date: August 2013                               */
