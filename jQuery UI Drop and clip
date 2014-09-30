@@ -1,0 +1,24 @@
+//<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+//<script>
+$(window).ready(function(){
+  // Our draggable element
+  var dte = $('#drag-this-element').draggable();
+  // Our droppable elements
+  $('.all-possible-droppable-elements').droppable({
+    drop: function(event, ui) {
+      // Find al child elements
+      var childs = $(this).find('*').filter(function(){
+        return ($(this).position().top >= dte.position().top || $(this).position().left >= dte.position().left) && this.nodeType == 1 && this.id != 'drag-this-element';
+      });
+      if (childs && childs.length > 0) {
+        dte.insertBefore(childs.first());
+      }
+      else {
+        dte.appendTo(this);
+      }
+      dte.css({top:0,left:0});
+    },
+    greedy: true
+  });
+});
+//</script>
